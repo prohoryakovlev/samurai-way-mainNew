@@ -2,6 +2,8 @@ import React from 'react';
 import s from './MyPosts.module.css';
 import Posts from "./Post/Posts";
 
+
+
 const MyPosts = (props: any) => {
     return (
             <div>
@@ -11,8 +13,8 @@ const MyPosts = (props: any) => {
 
                 <div className={s.posts}>
 
-                    <Posts likeCount={15} message={"Hi, how are you?"}/>
-                    <Posts likeCount={20} message={"It s my first post"}/>
+                    <Posts likeCount={23} message={"Hi, how are you?"}/>
+                    <Posts likeCount={0} message={"It s my first post"}/>
 
 
 
