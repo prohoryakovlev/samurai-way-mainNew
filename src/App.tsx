@@ -16,6 +16,9 @@ function App() {
                 <div className='app-wrapper-content'>
                     <Route path="/profile" component={Profile}/>
                     <Route path="/dialogs" component={Dialogs}/>
+                    <Route path="/news" />
+                    <Route path="/music" />
+                    <Route path="/settings" />
                 </div>
             </div>
         </BrowserRouter>
