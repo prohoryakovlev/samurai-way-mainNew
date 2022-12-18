@@ -4,8 +4,8 @@ import s from './Dialogs.module.css'
 const Dialogs = () => {
     return (
         <div className={s.dialogs}>
-            <div className={s.dialogsItem}>
-                <div className={s.dialog}>
+            <div className={s.dialogsItems}>
+                <div className={s.dialog + ' ' + s.active}>
                         Dimych
                 </div>
                 <div className={s.dialog}>
