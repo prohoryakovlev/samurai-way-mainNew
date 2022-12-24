@@ -7,7 +7,7 @@ import Dialogs from "./components/Dialogs/Dialogs";
 import {BrowserRouter, Route} from "react-router-dom";
 
 
-function App() {
+const App = () => {
     return (
         <BrowserRouter>
             <div className='app-wrapper'>
@@ -16,9 +16,9 @@ function App() {
                 <div className='app-wrapper-content'>
                     <Route path="/dialogs" component={Dialogs}/>
                     <Route path="/profile" component={Profile}/>
-                    <Route path="/news" />
-                    <Route path="/music" />
-                    <Route path="/settings" />
+                    <Route path="/news"/>
+                    <Route path="/music"/>
+                    <Route path="/settings"/>
                 </div>
             </div>
         </BrowserRouter>
