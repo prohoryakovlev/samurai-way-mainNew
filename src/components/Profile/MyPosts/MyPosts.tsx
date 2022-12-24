@@ -8,6 +8,8 @@ const MyPosts = (props: any) => {
     let post = [
         {id: 1, message: "Hi, how are you?", likeCount: 12},
         {id: 2, message: "It s my first post", likeCount: 11},
+        {id: 3, message: "asdasdasd", likeCount: 13},
+        {id: 4, message: "dadada", likeCount: 14},
     ]
 
     let postElement = post.map(p => <Posts message={p.message} likeCount={p.likeCount}/>)
@@ -26,6 +28,8 @@ const MyPosts = (props: any) => {
 
                 {postElement[0]}
                 {postElement[1]}
+                {postElement[2]}
+                {postElement[3]}
 
 
             </div>
