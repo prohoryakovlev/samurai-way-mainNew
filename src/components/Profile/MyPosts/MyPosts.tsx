@@ -4,9 +4,8 @@ import Posts from "./Post/Posts";
 import app from "../../../App";
 
 type MyPostPropsType = {
-    post: PostPropsType
+    posts: PostPropsType
 }
-
 
 type PostPropsType = {
     id: number
@@ -14,16 +13,16 @@ type PostPropsType = {
     likeCount: number
 }
 
-const MyPosts = (props: any) => {
+const MyPosts = () => {
 
-    let post = [
+    let posts = [
         {id: 1, message: "Hi, how are you?", likeCount: 12},
         {id: 2, message: "It s my first post", likeCount: 11},
         {id: 3, message: "asdasdasd", likeCount: 13},
         {id: 4, message: "dadada", likeCount: 14},
     ]
 
-    let postElement = post.map(p => <Posts message={p.message} likeCount={p.likeCount}/>)
+    let postElement = posts.map(p => <Posts message={p.message} likeCount={p.likeCount}/>)
 
     return (
         <div className={s.postsBlock}>

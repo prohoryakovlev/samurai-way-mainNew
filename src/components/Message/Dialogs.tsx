@@ -16,7 +16,7 @@ type DialogsType = {
     name: string
 }
 
-type DialogsPageType = {
+export type DialogsPageType = {
     dialogs: DialogsType
     messages: MessageType
 }
