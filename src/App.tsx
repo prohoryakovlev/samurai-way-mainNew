@@ -7,8 +7,8 @@ import Dialogs from "./components/Dialogs/Dialogs";
 import {BrowserRouter, Route} from "react-router-dom";
 
 
-
 const App = () => {
+
     return (
         <BrowserRouter>
             <div className='app-wrapper'>
@@ -17,9 +17,7 @@ const App = () => {
                 <div className='app-wrapper-content'>
 
                     <Route path={'/profile'} render={() => <Profile/>}/>
-                    <Route path={'/dialogs'} render={() => <Dialogs />}/>
-
-
+                    <Route path={'/dialogs'} render={() => <Dialogs/>}/>
 
                     <Route path={'/news'}/>
                     <Route path={'/music'}/>

@@ -14,13 +14,13 @@ type PostPropsType = {
 }
 
 const MyPosts = () => {
-
-    let posts = [
-        {id: 1, message: "Hi, how are you?", likeCount: 12},
-        {id: 2, message: "It s my first post", likeCount: 11},
-        {id: 3, message: "asdasdasd", likeCount: 13},
-        {id: 4, message: "dadada", likeCount: 14},
-    ]
+    //
+    // let posts = [
+    //     {id: 1, message: "Hi, how are you?", likeCount: 12},
+    //     {id: 2, message: "It s my first post", likeCount: 11},
+    //     {id: 3, message: "asdasdasd", likeCount: 13},
+    //     {id: 4, message: "dadada", likeCount: 14},
+    // ]
 
     let postElement = posts.map(p => <Posts message={p.message} likeCount={p.likeCount}/>)
 
