@@ -1,13 +1,20 @@
 import React from 'react';
 import s from './MyPosts.module.css';
 import Posts from "./Post/Posts";
+import app from "../../../App";
 
-export type MyPostPropsType = {
-
+type MyPostPropsType = {
+    post: PostPropsType
 }
 
 
-const MyPosts:React.FC<MyPostPropsType> = (props) => {
+type PostPropsType = {
+    id: number
+    message: string
+    likeCount: number
+}
+
+const MyPosts = (props: any) => {
 
     let post = [
         {id: 1, message: "Hi, how are you?", likeCount: 12},

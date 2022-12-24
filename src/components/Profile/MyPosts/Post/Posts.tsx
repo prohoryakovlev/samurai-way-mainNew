@@ -14,8 +14,6 @@ const Posts:React.FC<PostType> = (props ) => {
             <div>
                 <span>like </span>{props.likeCount}
             </div>
-
-
         </div>
     );
 };
