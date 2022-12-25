@@ -13,8 +13,9 @@ type PostPropsType = {
     likeCount: number
 }
 
-const MyPosts = () => {
-    //
+const MyPosts = (props: any) => {
+
+
     // let posts = [
     //     {id: 1, message: "Hi, how are you?", likeCount: 12},
     //     {id: 2, message: "It s my first post", likeCount: 11},
@@ -22,7 +23,7 @@ const MyPosts = () => {
     //     {id: 4, message: "dadada", likeCount: 14},
     // ]
 
-    let postElement = posts.map(p => <Posts message={p.message} likeCount={p.likeCount}/>)
+    let postElement = props.posts.map(p => <Posts message={p.message} likeCount={p.likeCount}/>)
 
     return (
         <div className={s.postsBlock}>
